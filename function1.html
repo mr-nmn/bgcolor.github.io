@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function1</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body id="bdy">
+    <div style="display: flex; justify-content: space-evenly ;">
+        <a href="function1.html">
+            <u>
+                <h1>one</h1>
+            </u>
+        </a>
+        <a href="function2.html">
+            <h1>two</h1>
+        </a>
+        <a href="function3.html">
+            <h1>three</h1>
+        </a>
+
+    </div>
+
+    <div class="center">
+        <img src="mario-icegif-6.gif" alt="" onclick="check()">
+        <div id="result" onclick="check()"></div>
+        <div id="result1" onclick="check()"></div>
+        <br>
+        <button onclick="check()">start1</button>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        var n = 0;
+        function check() {
+
+            if (n == 0) {
+                document.getElementById("bdy").style.backgroundColor = "pink";
+                document.getElementById("result").innerHTML = "pink";
+                document.getElementById("result1").innerHTML = n;
+                n++;
+            }
+            else if (n == 1) {
+                document.getElementById("bdy").style.backgroundColor = "lightblue";
+                document.getElementById("result").innerHTML = "blue";
+                document.getElementById("result1").innerHTML = n;
+                n++;
+            }
+            else if (n == 2) {
+                document.getElementById("bdy").style.backgroundColor = "yellow";
+                document.getElementById("result").innerHTML = "yellow";
+                document.getElementById("result1").innerHTML = n;
+                n++;
+            }
+            else if (n == 3) {
+                document.getElementById("bdy").style.backgroundColor = "lightgreen";
+                document.getElementById("result").innerHTML = "green";
+                document.getElementById("result1").innerHTML = n;
+                n = 0;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

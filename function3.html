@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function1</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body id="bdy">
+    <div style="display: flex; justify-content: space-evenly ;">
+        <a href="function1.html">
+            <h1>one</h1>
+        </a>
+        <a href="function2.html">
+            <h1>two</h1>
+        </a>
+        <a href="function3.html">
+            <u>
+                <h1>three</h1>
+            </u>
+        </a>
+
+    </div>
+
+    <div class="center">
+        <img src="mario-icegif-6.gif" alt="" onclick="check()">
+        <div id="result" onclick="check()"></div>
+        <div id="result1" onclick="check()"></div>
+        <br>
+        <button onclick="check()">start3</button>
+    </div>
+
+
+
+
+
+    <script>
+        var n = 0;
+        function check() {
+            var arr = ["pink", "lightblue", "yellow", "lightgreen"];
+
+            if (n <= 3) {
+                document.getElementById("bdy").style.backgroundColor = arr[n]
+                document.getElementById("result").innerHTML = arr[n];
+                document.getElementById("result1").innerHTML = n;
+                n++;
+            }
+            else if (n == 4) {
+                n = 0;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
